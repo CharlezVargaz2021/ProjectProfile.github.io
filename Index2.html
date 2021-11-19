@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-data</title>
+    <link rel="icon" href="#">
+</head>
+
+<body>
+    <div class="container">
+        <div class="biodatabox">
+            <div class="img"><img src="images/Char.jpg" alt="#"></div>
+            <table cellspacing="10px">
+                <tr colspan="2">
+                    <td colspan="2" class="head">Bio-Data<br><br><br></td>
+
+                </tr>
+                <tr colspan="2">
+                    <td colspan="2" class="heads"> Personal Detail<br><br></td>
+                </tr>
+
+                <tr>
+                    <td class="given"> Name </td>
+                    <td class="ans b"> :&nbsp; <span class="name">Charles Marie L. Vargas</span></td>
+                </tr>     
+                <tr>
+                    <td class="given"> Date of Birth </td>
+                    <td class="ans"> :&nbsp; 11/06/2000 </td>
+                </tr>
+                <tr>
+                    <td class="given"> Birth of Place </td>
+                    <td class="ans"> :&nbsp; Cebu City </td>
+                </tr>
+                <tr>
+                    <td class="given"> Age </td>
+                    <td class="ans"> :&nbsp; 20 years old </td>
+                </tr>
+                <tr>
+                    <td class="given"> Height </td>
+                    <td class="ans"> :&nbsp; 5.6 </td>
+                </tr>
+                <tr>
+                    <td class="given"> Blood Type </td>
+                    <td class="ans"> :&nbsp; A </td>
+                </tr>
+                <tr>
+                    <td class="given"> Address </td>
+                    <td class="ans"> :&nbsp; Purok Vanda, Maloro Tangub City, Misamis Occidental </td>
+                </tr>
+                <tr>
+                    <td class="given"> Religion </td>
+                    <td class="ans"> :&nbsp; Catholic </td>
+                </tr>
+                <tr>
+                    <td class="given"> Civil Status </td>
+                    <td class="ans"> :&nbsp; Single </td>
+                </tr>
+                <tr>
+                    <td class="given"> Study </td>
+                    <td class="ans"> :&nbsp; Gov.Alfonso D.Tan Collage </td>
+                </tr>
+                <tr>
+                    <td class="given"> Course</td>
+                    <td class="ans"> :&nbsp; BSCS-3 </td>
+                </tr>
+            </table>
+            <fieldset class="field">
+                <legend class="headsa">&nbsp;&nbsp; : Family detail : &nbsp;&nbsp;&nbsp;&nbsp;</legend>
+
+                <table cellspacing="20px">
+
+                    <tr>
+                        <td class="given"> Father name </td>
+                        <td class="ans"> :&nbsp; Jemarie G. Vargas </td>
+                    </tr>
+                    <tr>
+                        <td class="given"> Father Occupation </td>
+                        <td class="ans"> :&nbsp; Former </td>
+                    </tr>
+                    <tr>
+                        <td class="given"> Mother name </td>
+                        <td class="ans"> :&nbsp; Charlice Jean L. Vargas </td>
+                    </tr>
+                    <tr>
+                        <td class="given"> Mother Occupation </td>
+                        <td class="ans"> :&nbsp; Goverment Employee </td>
+                    </tr>
+
+                </table>
+            </fieldset>
+            <table cellspace="20px">
+                <tr>
+                    <td colspan="2" class="heads"><br> Contact Detail <br></td>
+                </tr>
+                <tr>
+                    <td class="given"><br> Email Address </td>
+                    <td class="ans"> :&nbsp; charlesvaras878@gmail.com </td>
+                </tr>
+                <tr>
+                    <td class="given"><br> Mobile No </td>
+                    <td class="ans"> :&nbsp; (Globe)&nbsp;0915 - 770 - 9971 &nbsp;&nbsp; <br> :&nbsp; (TNT)&nbsp;0930 - 370 - 3842 </td>
+                </tr>
+            </table>
+
+
+        </div>
+         <a href="Index.html" class="btn">Back</a>
+    </div>
+    <style>
+        * {
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-family: Arial Bold Italic;
+        }
+        body{
+            background: url(images/Background2.png);
+        }
+        
+        .container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+        
+        .biodatabox {
+            margin-top: 30px;
+            width: 70%;
+            height: 100%;
+            padding: 50px;
+            position: relative;
+            border: 3px solid blueviolet;
+            border-radius: 22px 22px 22px 22px;
+        }
+        
+        .biodatabox::before {
+            width: 100%;
+            height: 100%;
+            margin: -50px;
+            position: absolute;
+            border-radius: 22px 22px 22px 22px;
+            content: "";
+            background: url(images/BioBackGround.png);
+            background-size: 100% 100%;
+            opacity: .6;
+            z-index: -10;
+        }
+        
+        .img {
+            position: absolute;
+            margin: 25px;
+            right: 0;
+        }
+        
+        .img img {
+            backface-visibility: hidden;
+            border-radius: 10px;
+            width: 70%;
+            height: 70%;
+        }
+        
+        table {
+            width: 100%;
+            height: auto;
+            
+        }
+        
+        .head {
+            text-align: center;
+            font-size: 30px;
+            color: #000000;
+            font-weight: 550;
+        }
+        
+        .heads {
+            padding-left: 10%;
+            font-size: 25px;
+            font-weight: 550;
+            font-style: oblique;
+            color: #0f0f0f;
+            text-shadow: 15px 15px 40px white;
+        }
+        
+        .headsa {
+            font-size: 25px;
+            font-weight: 600;
+            font-style: inherit;
+            color: darkred;
+            text-align: center;
+        }
+        
+        .field {
+            border: 3px solid rgb(55, 0, 255);
+            border-radius: 20px;
+        }
+        
+        .name {
+            color: #000000;
+            font-weight: bold 50;
+
+        }
+        
+        .ans {
+            font-size: 20px;
+            font-family: Arial Bold Italic;
+        }
+
+        .btn{
+            display: inline-block;
+            padding: 5px 20px;
+            color: #e66767;
+            border: 3px solid #00ff00;
+            border-radius: 6px;
+            margin-top: 86px;
+            transition: .3s linear;
+            position: relative;
+            right: -80px;
+            bottom: -460px;
+        }
+        .btn:hover{
+            background: #000000;
+            color: #f2f2f2;
+        }
+    </style>
+
+</body>
+</html>
